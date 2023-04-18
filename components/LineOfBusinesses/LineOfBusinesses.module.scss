@@ -1,0 +1,96 @@
+.business_wrapper {
+  background: linear-gradient(
+    180deg,
+    #111111 29.17%,
+    rgba(37, 37, 37, 0.5) 100%
+  );
+  padding-top: 60px;
+}
+
+.business {
+  max-width: 85%;
+  margin: 0 auto;
+
+  .advisory {
+    img {
+      max-width: 500px;
+    }
+    @media (max-width: 1024px) {
+      display: flex;
+      justify-content: center;
+    }
+    @media (max-width: 580px) {
+      width: 200px;
+      height: 200px;
+      margin: 0 auto;
+    }
+    @media (max-width: 320px) {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+    }
+  }
+  .advisory_logo {
+    @media (max-width: 1024px) {
+      text-align: center;
+      margin-top: 20px;
+    }
+    @media (max-width: 470px) {
+      img {
+        width: 183px;
+        height: 48px;
+      }
+    }
+
+    .visit_btn {
+      margin: 32px 0;
+      @media (max-width: 1024px) {
+        display: flex;
+        justify-content: center;
+      }
+      button {
+        font-family: var(--font-light);
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 6px 32px;
+        background: transparent;
+        background: #00ce53;
+        color: #fff;
+        outline: none;
+        border: 1px solid #00ce53;
+        cursor: pointer;
+        font-weight: 100;
+        white-space: nowrap;
+        img {
+          width: 24px;
+        }
+        @media (max-width: 470px) {
+          padding: 0 35px;
+        }
+      }
+    }
+  }
+
+  .business_content_left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 104px;
+    border-bottom: 1px solid rgb(54, 53, 53);
+    @media (max-width: 1024px) {
+      display: block;
+    }
+  }
+  .business_content_right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 104px;
+    padding: 34px 0;
+    @media (max-width: 1024px) {
+      display: block;
+    }
+  }
+}
