@@ -113,7 +113,7 @@ const Footer: React.FC = () => {
             <div className={styles.appointmentMedia}>
               <h2>Schedule an appointment</h2>
 
-              <Image src={Rigtarrow} alt="" width={20} height={20} />
+              <Image src={Rigtarrow} alt="" width={28} height={28} />
             </div>
             <div className={styles.copyRightContent}>
               <div className={styles.terms}>

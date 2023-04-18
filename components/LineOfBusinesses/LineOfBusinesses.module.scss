@@ -10,30 +10,64 @@
 .business {
   max-width: 85%;
   margin: 0 auto;
+  h1 {
+    font-size: 32px;
+    margin-bottom: 32px;
+    letter-spacing: 0.12em;
+    @media (max-width: 485px) {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+  }
 
   .advisory {
     img {
+      padding: 0 32px;
       max-width: 500px;
       @media (max-width: 580px) {
-        width: 100%;
-        object-fit: cover;
+        object-fit: contain;
+        width: 115%;
         margin: 0 auto;
       }
+      @media (max-width: 400px) {
+        margin-top: -40px;
+      }
     }
+
     @media (max-width: 1024px) {
       display: flex;
       justify-content: center;
     }
   }
   .advisory_logo {
+    h2 {
+      font-size: 20px;
+      letter-spacing: 0.06em;
+      text-transform: capitalize;
+      margin-bottom: 16px;
+      font-weight: 100;
+    }
+    p {
+      font-size: 16px;
+      line-height: 19px;
+    }
     @media (max-width: 1024px) {
       text-align: center;
       margin-top: 20px;
     }
-    @media (max-width: 470px) {
-      img {
-        width: 183px;
-        height: 48px;
+    @media (max-width: 580px) {
+      margin-top: -8px;
+    }
+    @media (max-width: 400px) {
+      margin-top: -20px;
+    }
+    img {
+      margin-bottom: 6px;
+
+      @media (max-width: 470px) {
+        img {
+          width: 100%;
+        }
       }
     }
 
@@ -44,7 +78,6 @@
         justify-content: center;
       }
       button {
-        font-family: var(--font-light);
         display: flex;
         align-items: center;
         gap: 12px;
@@ -55,13 +88,10 @@
         outline: none;
         border: 1px solid #00ce53;
         cursor: pointer;
-        font-weight: 100;
         white-space: nowrap;
+        font-weight: 100;
         img {
           width: 24px;
-        }
-        @media (max-width: 470px) {
-          padding: 0 35px;
         }
       }
     }
@@ -86,6 +116,12 @@
     padding: 34px 0;
     @media (max-width: 1024px) {
       display: block;
+    }
+    @media (max-width: 768px) {
+      padding: 20px 0;
+    }
+    @media (max-width: 580px) {
+      padding: 10px 0;
     }
   }
 }

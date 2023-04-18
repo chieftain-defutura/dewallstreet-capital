@@ -6,7 +6,7 @@ import RollArrow from "../../public/assets/icons/roll-arrow-white.svg";
 import styles from "./Hero.module.scss";
 // import Cookies from "../../componets/Cookies";
 
-const Hero = () => {
+const Hero: React.FC = () => {
   return (
     <>
       <div className={styles.hero_page_wrapper}>
@@ -36,7 +36,7 @@ const Hero = () => {
                 <h1>Z</h1>
               </div>
             </div>
-            <h3>business needs.</h3>
+            <h3>business needs</h3>
             <div className={styles.dewall_para}>
               <p>
                 Dewallstreet Consultancy is a legally structured unit of
