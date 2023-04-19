@@ -40,6 +40,20 @@
     }
   }
   .advisory_logo {
+    .imageContainer {
+      width: 100%;
+      margin-bottom: 24px;
+      > div {
+        position: unset !important;
+      }
+      .image {
+        object-fit: contain;
+        max-width: 349px !important;
+        width: 100% !important;
+        position: relative !important;
+        height: unset !important;
+      }
+    }
     h2 {
       font-size: 20px;
       letter-spacing: 0.06em;

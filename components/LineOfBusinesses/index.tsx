@@ -38,7 +38,9 @@ const DemoBusinesses: React.FC<IBusiness> = ({
         <Image src={image} alt="" width={543} height={303} />
       </div>
       <div className={styles.advisory_logo}>
-        <Image src={logo} alt="" width={352} height={58} layout="responsive" />
+        <div className={styles.imageContainer}>
+          <Image src={logo} alt="" layout="fill" className={styles.image} />
+        </div>
         <h2>{title}</h2>
         <p>{discription}</p>
         <div className={styles.visit_btn}>
