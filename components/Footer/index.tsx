@@ -10,6 +10,7 @@ import Rigtarrow from "../../public/assets/icons/right-arrow.svg";
 import Telegram from "../../public/assets/icons/telegram.svg";
 import Image from "next/image";
 import styles from "./Footer.module.scss";
+import Link from "next/link";
 
 const Footer: React.FC = () => {
   return (
@@ -22,9 +23,8 @@ const Footer: React.FC = () => {
                 <Image
                   src={Logo}
                   alt=""
-                  width={220}
-                  height={62}
-                  objectFit="contain"
+                  layout="fill"
+                  className={styles.image}
                 />
               </div>
               <div className={styles.addressDetails}>
@@ -51,36 +51,60 @@ const Footer: React.FC = () => {
             <div className={styles.secondContent}>
               <div className={styles.firm}>
                 <h5>Firm</h5>
-                <p>About Us</p>
-                <p>Jobs</p>
-                <p>Case Study</p>
-                <p>Latest News</p>
+                <Link href="">
+                  <p>About Us</p>
+                </Link>
+                <Link href="">
+                  <p>Jobs</p>
+                </Link>
+                <Link href="">
+                  <p>Case Study</p>
+                </Link>
+                <Link href="">
+                  <p>Latest News</p>
+                </Link>
               </div>
               <div className={styles.firm}>
                 <h5>Wings</h5>
-                <p>Bureaus</p>
-                <p>Studios</p>
-                <p>Labs</p>
-                <p>Boards</p>
+                <Link href="">
+                  <p>Bureaus</p>
+                </Link>
+                <Link href="">
+                  <p>Studios</p>
+                </Link>
+                <Link href="">
+                  <p>Labs</p>
+                </Link>
+                <Link href="">
+                  <p>Boards</p>
+                </Link>
               </div>
               <div className={styles.followUsMedia}>
                 <h5>Follow us on</h5>
                 <div className={styles.icon}>
                   <Image src={Twiter} alt="" width={20} height={20} />
-                  <p>Twitter</p>
+                  <Link href="">
+                    <p>Twitter</p>
+                  </Link>
                 </div>
                 <div className={styles.icon}>
                   <Image src={Instagram} alt="" width={20} height={20} />
-                  <p>Instagram</p>
+                  <Link href="">
+                    <p>Instagram</p>
+                  </Link>
                 </div>
                 <div className={styles.icon}>
                   <Image src={Linkedin} alt="" width={20} height={20} />
 
-                  <p>Linkedin</p>
+                  <Link href="">
+                    <p>Linkedin</p>
+                  </Link>
                 </div>
                 <div className={styles.icon}>
                   <Image src={Telegram} alt="" width={20} height={20} />
-                  <p>Telegram</p>
+                  <Link href="">
+                    <p>Telegram</p>
+                  </Link>
                 </div>
               </div>
               <div className={styles.appoinment}>
@@ -95,16 +119,24 @@ const Footer: React.FC = () => {
                   <h5>Follow Us On</h5>
                   <div className={styles.socialMedia}>
                     <div>
-                      <Image src={Twiter} alt="" width={20} height={20} />
+                      <Link href="">
+                        <Image src={Twiter} alt="" width={20} height={20} />
+                      </Link>
                     </div>
                     <div>
-                      <Image src={Instagram} alt="" width={20} height={20} />
+                      <Link href="">
+                        <Image src={Instagram} alt="" width={20} height={20} />
+                      </Link>
                     </div>
                     <div>
-                      <Image src={Linkedin} alt="" width={20} height={20} />
+                      <Link href="">
+                        <Image src={Linkedin} alt="" width={20} height={20} />
+                      </Link>
                     </div>
                     <div>
-                      <Image src={Telegram} alt="" width={20} height={20} />
+                      <Link href="">
+                        <Image src={Telegram} alt="" width={20} height={20} />
+                      </Link>
                     </div>
                   </div>
                 </div>

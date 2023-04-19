@@ -18,7 +18,18 @@
         border: none;
       }
       .logo {
+        width: 100%;
         margin-bottom: -4px;
+        > div {
+          position: unset !important;
+        }
+        .image {
+          object-fit: contain;
+          max-width: 236px !important;
+          width: 100% !important;
+          position: relative !important;
+          height: unset !important;
+        }
       }
       .addressDetails {
         display: flex;
@@ -59,7 +70,7 @@
             margin-top: 16px;
             @media (max-width: 768px) {
               font-size: 12px;
-              margin-top: 8px;
+              margin-top: 14px;
             }
           }
         }
