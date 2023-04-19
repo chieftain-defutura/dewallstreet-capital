@@ -48,7 +48,7 @@
       }
       .image {
         object-fit: contain;
-        max-width: 349px !important;
+        max-width: 309px !important;
         width: 100% !important;
         position: relative !important;
         height: unset !important;
@@ -104,6 +104,7 @@
         cursor: pointer;
         white-space: nowrap;
         font-weight: 100;
+        font-family: var(--font-medium);
         img {
           width: 24px;
         }
