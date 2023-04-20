@@ -36,6 +36,7 @@
         align-items: center;
         gap: 8px;
         margin-top: 24px;
+        margin-right: 20px;
         p {
           font-size: 14px;
           color: #aaaaaa;
@@ -55,6 +56,7 @@
 
         .firm {
           h5 {
+            font-family: var(--font-semiBold);
             font-size: 20px;
             text-transform: uppercase;
             font-weight: 100;
@@ -76,6 +78,7 @@
         }
         .followUsMedia {
           h5 {
+            font-family: var(--font-semiBold);
             font-size: 14px;
             text-transform: uppercase;
             font-weight: 100;
@@ -109,6 +112,7 @@
           .follow {
             margin-top: 32px;
             h5 {
+              font-family: var(--font-semiBold);
               color: #e1e1e1;
               font-size: 16px;
             }
