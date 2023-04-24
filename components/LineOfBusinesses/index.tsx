@@ -2,7 +2,8 @@ import React from "react";
 import Image from "next/image";
 import classNames from "classnames";
 import business from "../../public/assets/images/businesses.png";
-import Conseltancy from "../../public/assets/icons/conseltancy-logo.svg";
+import consultancy from "../../public/assets/icons/consultancy-logo.svg";
+// import Conseltancy from "../../public/assets/icons/conseltancy-logo.svg";
 import advisory from "../../public/assets/images/advisory.png";
 import advisorylogo from "../../public/assets/icons/advisory-logo.svg";
 import ExternalLink from "../../public/assets/icons/external-link_white.svg";
@@ -67,7 +68,7 @@ const LineOfBusinesses: React.FC = () => {
               <DemoBusinesses
                 position="left"
                 image={business}
-                logo={Conseltancy}
+                logo={consultancy}
                 title="On demand client services"
                 discription="We are the most reputed consultancy amongst new age market demands and we word for individuals and business on various fixed and hourly fee models."
                 button="Visit Consultancy website"

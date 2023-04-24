@@ -1,5 +1,9 @@
 .hero_page_wrapper {
   position: relative;
+  height: 100vh;
+  @media (max-width: 1024px) {
+    height: auto;
+  }
   .video_content {
     position: absolute;
     right: 0;
@@ -26,7 +30,7 @@
     .dewall_logo {
       display: flex;
       justify-content: center;
-      padding-top: 94px;
+      padding-top: 64px;
       @media (max-width: 450px) {
         padding-top: 40px;
       }
@@ -45,7 +49,7 @@
     .heading {
       display: flex;
       justify-content: center;
-      margin-top: 64px;
+      margin-top: 42px;
       text-align: center;
       @media (max-width: 780px) {
         margin-top: 32px;
@@ -93,10 +97,8 @@
       display: flex;
       justify-content: center;
       padding: 56px;
-      margin-top: 22px;
       @media (max-width: 720px) {
         padding: 30px;
-        margin-top: 0;
       }
       @media (max-width: 430px) {
         padding: 30px 16px;
